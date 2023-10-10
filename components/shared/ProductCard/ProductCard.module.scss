@@ -8,6 +8,12 @@
   background-color: $background-dark;
   position: relative;
 
+  &:hover {
+    .info {
+      opacity: 0.4;
+    }
+  }
+
   img {
     height: 100%;
     width: 100%;
@@ -29,6 +35,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    transition: all ease-in-out 0.5s;
 
     .title {
       font-size: 42px;
