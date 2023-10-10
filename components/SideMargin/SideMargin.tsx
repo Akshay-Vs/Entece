@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './SideMargin.module.scss';
 
-const SideMargin: React.FC = () => {
+export const SideMargin: React.FC = () => {
   return (
     <sub className={styles.margin}>
       <h1>#INSPIRE </h1>
@@ -12,4 +12,13 @@ const SideMargin: React.FC = () => {
   );
 };
 
-export default SideMargin;
+export const RightMargin: React.FC = () => {
+  return (
+    <span className={styles.rightMargin}>
+      <h1>#SHOP</h1>
+      <span className={styles.gray}>
+        <h1>#SHOP</h1>
+      </span>
+    </span>
+  );
+};

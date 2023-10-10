@@ -1,2 +1,2 @@
-import SideMargin from './SideMargin'
-export default SideMargin
+import { RightMargin, SideMargin } from './SideMargin';
+export { RightMargin, SideMargin };

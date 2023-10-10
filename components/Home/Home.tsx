@@ -1,9 +1,7 @@
-import SideMargin from '../SideMargin';
 import styles from './Home.module.scss';
 const Home: React.FC = () => {
   return (
-    <main className={styles.container}>
-      <SideMargin />
+    <main className={styles.container} id="home">
       <div className={styles.left}>
         <div className={styles.discover}>
           <h1 className={styles.shadow}>Discover</h1>

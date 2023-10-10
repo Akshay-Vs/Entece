@@ -16,7 +16,6 @@
     height: 100vh;
     background-color: $background-shade;
     background-image: url('https://images.pexels.com/photos/10660561/pexels-photo-10660561.jpeg');
-    backdrop-filter: blur(10px);
     opacity: 0.5;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,8 +31,8 @@
     &:hover {
       opacity: 0.9;
       .discover {
-        backdrop-filter: blur(0px);
         backdrop-filter: grayscale(100%);
+
         h1 {
           color: $text-elegent;
           letter-spacing: 3px;
@@ -47,8 +46,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      backdrop-filter: blur(10px);
-      backdrop-filter: grayscale(10%);
+      backdrop-filter: graysc ale(0%);
+      // backdrop-filter: blur(10px);
       transition: all ease-in-out 0.8s;
 
       h1 {
