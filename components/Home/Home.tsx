@@ -1,11 +1,9 @@
+import SideMargin from '../SideMargin';
 import styles from './Home.module.scss';
 const Home: React.FC = () => {
   return (
     <main className={styles.container}>
-      <sub className={styles.margin}>
-        <h1>#INSPIRE</h1>
-      </sub>
-
+      <SideMargin />
       <div className={styles.left}>
         <div className={styles.discover}>
           <h1 className={styles.shadow}>Discover</h1>

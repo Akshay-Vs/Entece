@@ -9,6 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 12vw;
 
   .left {
     width: 50vw;
@@ -26,6 +27,7 @@
     justify-content: center;
     align-items: center;
     transition: all ease-in-out 0.5s;
+    border-bottom: $line 2px solid;
 
     &:hover {
       opacity: 0.9;
@@ -82,37 +84,7 @@
       line-height: 90px;
     }
   }
-  .margin {
-    width: 15vw;
-    height: 100vh;
-    border-right: $line 2px solid;
-    z-index: 9;
-    background-image: url('https://images.pexels.com/photos/4021774/pexels-photo-4021774.jpeg?auto=compress&cs=tinysrgb&w=1600');
-    background-position: bottom, center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;
-    opacity: 0.5;
-    display: flex;
-    justify-content: center;
-    align-self: center;
 
-    h1 {
-      height: 100%;
-      width: 100%;
-      writing-mode: vertical-lr;
-      text-orientation: sideways-right;
-      white-space: nowrap;
-      font-size: 200px;
-      text-align: center;
-      font-family: $font-elegent;
-      font-weight: 600;
-      color: $text-elegent;
-      overflow: hidden;
-      line-height: 10px;
-      backdrop-filter: blur(10px);
-    }
-  }
   .right {
     width: 50vw;
     height: 100vh;

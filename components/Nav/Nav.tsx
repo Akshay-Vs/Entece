@@ -1,6 +1,6 @@
 import Button from '@components/shared/Button';
+import Link from 'next/link';
 import React from 'react';
-
 import style from './Nav.module.scss';
 
 const Nav: React.FC = () => {
@@ -10,7 +10,7 @@ const Nav: React.FC = () => {
         <div className={style.logo}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="2em"
+            height="2.2em"
             viewBox="0 0 512 512"
           >
             <style>fill:#cdab71</style>
@@ -26,9 +26,15 @@ const Nav: React.FC = () => {
 
       <div className={style.right}>
         <div className={style.menu}>
-          <div className={style.item}>Login</div>
-          <div className={style.item}>Register</div>
-          <div className={style.item}>Offers</div>
+          <Link className={style.item} href="#">
+            Login
+          </Link>
+          <Link className={style.item} href="#">
+            Register
+          </Link>
+          <Link className={style.item} href="#">
+            Shop
+          </Link>
         </div>
       </div>
     </nav>

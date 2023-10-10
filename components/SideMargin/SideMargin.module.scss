@@ -1,0 +1,56 @@
+@import '@styles/defaults.module.scss';
+
+.margin {
+  width: 12vw;
+  height: 280vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-image: url('https://images.pexels.com/photos/4021774/pexels-photo-4021774.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  // opacity: 0.5;
+  background-position: bottom, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @mixin side-text {
+    padding: 0;
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    white-space: nowrap;
+    font-size: 220px;
+    text-align: start;
+    font-family: $font-elegent;
+    font-weight: 600;
+    color: $text-elegent;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 100px;
+  }
+  h1 {
+    @include side-text;
+    width: 100%;
+    height: 60%;
+    margin: 0;
+
+    padding: 10px;
+  }
+  .brown {
+    width: 12vw;
+    height: 70%;
+    background-color: $text-sub;
+    z-index: 99;
+
+    h1 {
+      @include side-text;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}

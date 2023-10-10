@@ -6,7 +6,7 @@ export interface IButton {
 }
 
 const Button: React.FC<IButton> = ({ name }) => {
-  return <div className={styles.button}>{name}</div>;
+  return <button className={styles.button}>{name}</button>;
 };
 
 export default Button;

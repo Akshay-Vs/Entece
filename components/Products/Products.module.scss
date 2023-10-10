@@ -1,0 +1,25 @@
+@import '@styles/defaults.module.scss';
+
+.container {
+  min-height: 120vh;
+  margin-left: 12vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .border {
+    border-bottom: $line 2px solid;
+  }
+  .line {
+    position: absolute;
+    height: 100vh;
+    width: 2px;
+    background-color: $line;
+  }
+}
