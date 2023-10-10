@@ -1,0 +1,63 @@
+@import '@styles/defaults.module.scss';
+
+.container {
+  position: absolute;
+  width: 100vw;
+  height: 90px;
+  margin: 0;
+  top: 0;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  font-family: $font-default;
+  font-size: 16px;
+  color: $text-sub;
+  z-index: 9;
+
+  .left {
+    height: 100%;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 15vw;
+    cursor: pointer;
+    z-index: 99;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+    background-color: transparent;
+    border-bottom: $line 2px solid;
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+
+      .item {
+        margin: 30px;
+        font-size: 18px;
+        color: $text-head;
+        opacity: 0.8;
+        cursor: pointer;
+        transition: all ease-in-out 0.2s;
+
+        &:hover {
+          color: $text-elegent;
+        }
+      }
+    }
+  }
+}

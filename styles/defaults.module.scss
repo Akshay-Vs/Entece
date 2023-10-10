@@ -1,0 +1,30 @@
+// Colors
+$background-white: #fff;
+$background-shade: #f6f0ee23;
+$background-dark: #ebe6e423;
+
+$primary-default: #f6f0ee;
+$primary-button: #efece8;
+
+$accent: #2f2423;
+
+$text-elegent: #cdab71;
+$text-head: #2f2423;
+$text-sub: #42403e;
+
+$line: #d7d1cf;
+
+// Fonts
+@import './fonts.scss';
+
+$font-default: 'Roboto';
+$font-head: 'EB Garamond';
+$font-sub: 'EB Garamond';
+$font-elegent: 'Minbus';
+
+@mixin font($font, $size, $weight, $color) {
+  font-family: $font;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}

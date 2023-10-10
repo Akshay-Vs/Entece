@@ -1,0 +1,21 @@
+@import '@styles/defaults.module.scss';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 28px;
+  padding: 5px 30px;
+  background-color: $primary-button;
+  border-radius: 30px;
+  font-family: $font-default;
+  font-size: 16px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.141);
+  user-select: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+
+  &:hover {
+    background-color: $text-elegent;
+  }
+}

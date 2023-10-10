@@ -48,8 +48,6 @@ program
       const templates = {
         'BaseTemplate.component.template': `${name}.tsx`,
         'BaseTemplate.style.template': `${name}.style.scss`,
-        'BaseTemplate.mock.template': `${name}.mock.tsx`,
-        'BaseTemplate.stories.template': `${name}.stories.tsx`,
         'BaseTemplate.index.template': `index.ts`,
       };
 
