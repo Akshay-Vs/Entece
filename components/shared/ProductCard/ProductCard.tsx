@@ -1,21 +1,24 @@
-import Image from 'next/image';
-import React from 'react';
-import styles from './ProductCard.module.scss';
-
-export interface IProductCard {
+import ProductImage from './ProductImage';
+import styles from './ProductImage.module.scss';
+interface IProductCard {
   image: string;
+  title: string;
+  price: number;
+  style?: string;
 }
 
-const ProductCard: React.FC<IProductCard> = ({ image }) => {
+const ProductCard: React.FC<IProductCard> = ({
+  image,
+  title,
+  price,
+  style,
+}) => {
   return (
-    <div className={styles.container}>
-      <Image src={image} height={500} width={400} alt={'Alt'} />
-      <div className={styles.info}>
-        <h1 className={styles.title}>Title</h1>
-        <p className={styles.description}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore dicta
-          sequi quibusdam.
-        </p>
+    <div className={style}>
+      <ProductImage image={image} />
+      <div className="flex w-full justify-around align-middle p-5">
+        <h3 className={styles.title}>{title}</h3>
+        <p className={styles.price}>$ {price}</p>
       </div>
     </div>
   );

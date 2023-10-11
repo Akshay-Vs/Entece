@@ -14,5 +14,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: $line 2px solid;
   }
+}
+.border {
+  border-left: $line 2px solid;
+  border-right: $line 2px solid;
 }

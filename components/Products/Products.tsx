@@ -7,19 +7,58 @@ const Products: React.FC = () => {
   return (
     <section id="shop" className={styles.container}>
       <div className={styles.wrapper}>
-        <ProductCard image="https://images.pexels.com/photos/18069158/pexels-photo-18069158/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-depicts-the-process-used-by-text-to-image-diffusion-models-it-was-created-by-linus-zoll-as-part-of-the-visualising-ai.png" />
-        <ProductCard image="https://images.pexels.com/photos/17483848/pexels-photo-17483848/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-depicts-a-look-inside-how-ai-microchips-are-designed-it-was-created-by-champ-panupong-techawongthawon-as-part-of-the-v.png" />
-        <ProductCard image="https://images.pexels.com/photos/17483850/pexels-photo-17483850/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-depicts-a-look-inside-how-ai-microchips-are-designed-it-was-created-by-champ-panupong-techawongthawon-as-part-of-the-v.png" />
+        <ProductCard
+          image="https://images.pexels.com/photos/1573434/pexels-photo-1573434.jpeg"
+          title="Rhythm #1"
+          price={236}
+        />
+        <ProductCard
+          image="https://images.pexels.com/photos/7004697/pexels-photo-7004697.jpeg"
+          title="Yellow Oranges"
+          price={763}
+          style={styles.border}
+        />
+        <ProductCard
+          image="https://images.pexels.com/photos/7319286/pexels-photo-7319286.jpeg"
+          title="Bread & Butter"
+          price={75}
+        />
       </div>
       <div className={styles.wrapper}>
-        <ProductCard image="https://images.pexels.com/photos/18069856/pexels-photo-18069856/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-explores-how-humans-can-creatively-collaborate-with-artificial-general-intelligence-agi-in-the-future-and-how-it-can.png" />
-        <ProductCard image="https://images.pexels.com/photos/18069855/pexels-photo-18069855/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-explores-how-humans-can-creatively-collaborate-with-artificial-general-intelligence-agi-in-the-future-and-how-it-can.png" />
-        <ProductCard image="https://images.pexels.com/photos/17485846/pexels-photo-17485846/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-represents-the-ways-in-which-ai-can-help-compress-videos-and-increase-efficiency-for-users-it-was-created-by-vincent-s.png" />
+        <ProductCard
+          image="https://images.pexels.com/photos/2086361/pexels-photo-2086361.jpeg"
+          title="Skyline Under"
+          price={56}
+        />
+        <ProductCard
+          image="https://images.pexels.com/photos/2911521/pexels-photo-2911521.jpeg"
+          title="splash #1"
+          price={567}
+          style={styles.border}
+        />
+        <ProductCard
+          image="https://images.pexels.com/photos/971546/pexels-photo-971546.jpeg"
+          title="Modernism"
+          price={76}
+        />
       </div>
       <div className={styles.wrapper}>
-        <ProductCard image="https://images.pexels.com/photos/18069161/pexels-photo-18069161/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-depicts-the-process-used-by-text-to-image-diffusion-models-it-was-created-by-linus-zoll-as-part-of-the-visualising-ai.png" />
-        <ProductCard image="https://images.pexels.com/photos/18069241/pexels-photo-18069241/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-depicts-how-ai-tools-can-democratise-education-and-make-learning-more-efficient-it-was-created-by-martina-stiftinger-a.png" />
-        <ProductCard image="https://images.pexels.com/photos/18069241/pexels-photo-18069241/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-depicts-how-ai-tools-can-democratise-education-and-make-learning-more-efficient-it-was-created-by-martina-stiftinger-a.png" />
+        <ProductCard
+          image="https://images.pexels.com/photos/3095769/pexels-photo-3095769.jpeg"
+          title="splash #2"
+          price={23}
+        />
+        <ProductCard
+          image="https://images.pexels.com/photos/1585325/pexels-photo-1585325.jpeg"
+          title="Cappadocia Caves"
+          price={76}
+          style={styles.border}
+        />
+        <ProductCard
+          image="https://images.pexels.com/photos/1690351/pexels-photo-1690351.jpeg"
+          title="Minimal Abstract"
+          price={45}
+        />
       </div>
     </section>
   );

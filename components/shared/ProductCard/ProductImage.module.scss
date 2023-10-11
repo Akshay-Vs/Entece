@@ -1,0 +1,52 @@
+@import '@styles/defaults.module.scss';
+
+.container {
+  margin: 20px;
+  height: 600px;
+  width: 400px;
+  background-color: $background-dark;
+  position: relative;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+  border: #514535c8 solid 7px;
+
+  &:hover {
+    .info {
+      opacity: 0.2;
+    }
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  max-height: 30px;
+  font-size: 32px;
+  font-family: $font-elegent;
+  font-weight: 600;
+  color: $text-head;
+  text-align: center;
+  line-height: 60px;
+  transition: all ease-in-out 0.1s;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: $font-default;
+  font-weight: 400;
+  color: $text-sub;
+  text-align: center;
+  line-height: 30px;
+  transition: all ease-in-out 0.1s;
+  font-weight: 600;
+}
