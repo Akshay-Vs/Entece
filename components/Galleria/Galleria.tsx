@@ -1,7 +1,7 @@
 import ImageCard from '@components/shared/ImageCard';
 import React from 'react';
+import Button from '../shared/Button';
 import styles from './Galleria.module.scss';
-
 const Galleria: React.FC = () => {
   return (
     <section className={styles.container} id="products">
@@ -30,6 +30,9 @@ const Galleria: React.FC = () => {
           description="A portal to another dimention"
           image="https://images.pexels.com/photos/7307541/pexels-photo-7307541.jpeg"
         />
+      </div>
+      <div className={styles.button}>
+        <Button name="View More" />
       </div>
     </section>
   );
